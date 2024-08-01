@@ -25,6 +25,8 @@ RUN python -m venv /py && \
         --disabled-password \
         --no-create-home \
         django-user
+# Add this line to install psycopg2
+
 # first line install venv, second line upgrade pip, third line install requirements, fourth line remove tmp folder, fifth line create user
 # --disabled-password: do not set password for the user
 # --no-create-home: do not create home directory for the user
